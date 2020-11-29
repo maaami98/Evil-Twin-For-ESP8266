@@ -16,6 +16,8 @@ Examine sample.html
 cp sample.html sample2.html
 ```
 edit sample2.html
+
+Put sample2.html -> ESP8266
 ```
 ampy --port %COMPORT% --baud 115200 put sample2.html
 ```
