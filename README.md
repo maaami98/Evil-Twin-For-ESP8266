@@ -2,7 +2,7 @@
 Evil Twin Attack For ESP8266, Captive Portal + Fake AP + Changeable Index, Micropython
 
 ## Installation
-exec 1.install_module.bat
+run 1.install_module.bat
 
 Change the com port number written in 2.flash.bat and run 
 end reset esp8266
