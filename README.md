@@ -21,3 +21,8 @@ edit sample2.html
 ```
 ampy --port %COMPORT% --baud 115200 put sample2.html
 ```
+
+## Test
+```
+python -m serial.tools.miniterm %COMPORT% 115200
+```
