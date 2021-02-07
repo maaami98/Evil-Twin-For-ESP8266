@@ -113,7 +113,7 @@ if __name__=="__main__":
     
     target=ap_list[choise]
     del ap_list
-    print('ssid:',target[0],'-bssid:',target[1])
+    print('ssid:',target[0],'mac:',target[1].hex())
     cap=captive(target[0])
     indexs=find_index()
     if len(indexs)==1:
